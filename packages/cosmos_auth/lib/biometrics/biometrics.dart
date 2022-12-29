@@ -16,7 +16,9 @@ class Biometrics {
       if (await localAuth.canCheckBiometrics) {
         final result = await localAuth.authenticate(
           localizedReason: reason,
-          biometricOnly: biometricsOnly,
+          options: AuthenticationOptions(
+              biometricOnly: biometricsOnly
+          ),
         );
         return right(result);
       } else {
@@ -47,5 +49,9 @@ model.BiometricType _biometricTypeFromLocalAuth(BiometricType type) {
       return model.BiometricType.fingerprint;
     case BiometricType.iris:
       return model.BiometricType.iris;
+    case BiometricType.strong:
+      return model.BiometricType.strong;
+    case BiometricType.weak:
+      return model.BiometricType.weak;
   }
 }
