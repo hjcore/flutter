@@ -15,7 +15,7 @@ dependencies:
   flutter_secure_storage: ^5.1.2
   biometric_storage: 4.0.0
   encrypt: ^5.0.1
-  alan: ^0.40.2+1
+  alan: ^0.41.2+1
   uuid: ^3.0.5
   decimal: ^1.5.0
   shared_preferences: ^2.0.11
