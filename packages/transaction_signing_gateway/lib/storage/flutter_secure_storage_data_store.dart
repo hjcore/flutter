@@ -8,7 +8,7 @@ class FlutterSecureStorageDataStore implements SecureDataStore {
   }) : _store = storage ?? const FlutterSecureStorage();
 
   final FlutterSecureStorage _store;
-  static const iosOptions = IOSOptions(accessibility: KeychainAccessibility.passcode);
+  static const iosOptions = IOSOptions(accessibility: KeychainAccessibility.unlocked);
   static const androidOptions = AndroidOptions(encryptedSharedPreferences: true);
 
   @override
