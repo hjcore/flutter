@@ -35,9 +35,9 @@ class CosmosAppTheme {
   static ThemeData buildAppTheme() {
     const colorScheme = ColorScheme(
       primary: CosmosColors.darkBg,
-      primaryVariant: CosmosColors.lightSurface,
+      /// primaryVariant: CosmosColors.lightSurface,
       secondary: CosmosColors.darkBg,
-      secondaryVariant: CosmosColors.lightBg,
+      // secondaryVariant: CosmosColors.lightBg,
       surface: CosmosColors.lightSurface,
       background: CosmosColors.lightBg,
       error: CosmosColors.error,
@@ -102,9 +102,9 @@ class CosmosAppTheme {
   static ThemeData buildDarkAppTheme() {
     const colorScheme = ColorScheme(
       primary: CosmosColors.darkBg,
-      primaryVariant: CosmosColors.darkSurface,
+      // primaryVariant: CosmosColors.darkSurface,
       secondary: CosmosColors.lightBg,
-      secondaryVariant: CosmosColors.lightBg,
+      // secondaryVariant: CosmosColors.lightBg,
       surface: CosmosColors.darkSurface,
       background: CosmosColors.darkBg,
       error: CosmosColors.error,
